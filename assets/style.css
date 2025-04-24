@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url(fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212631;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: #212631;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.container {
+    background-color: #333A48;
+    width: 100%;
+    max-width: 490px;
+    min-height: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Manrope';
+    font-weight: 800;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#advice-number {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #79E09E;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+#advice-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 24px;  
+    color: #d0e0e8;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    line-height: 1.4; 
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.separador img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #88FBB1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -25px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(136, 251, 177, 0.8);
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        min-height: 300px;
+    }
+    
+    #advice-text {
+        font-size: 20px;
+        padding: 0 5px;
+    }
+    
+    #advice-number {
+        font-size: 10px;
+    }
+    
+    .separador img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    #advice-text {
+        font-size: 18px;
+    }
+    
+    .separador img {
+        max-width: 250px;
+    }
+}
